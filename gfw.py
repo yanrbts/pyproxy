@@ -67,7 +67,6 @@ def download_config(dir) -> int:
 def download_hysteria(dir):
     target_file_path = os.path.join(dir, 'hysteria-linux-amd64')
     url = "https://github.com/apernet/hysteria/releases/download/v1.3.5/hysteria-linux-amd64"
-    urlavx = "https://github.com/apernet/hysteria/releases/download/v1.3.5/hysteria-linux-amd64-avx"
 
     if os.path.exists(target_file_path):
         click.secho("[*] The hysteria file already exists. No download needed.", fg='green')
